@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [TestNG pactice Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="login Test 3(failed)">
+    <parameter name="password" value="9470522792"/>
+    <parameter name="browser" value="microsoft edge"/>
+    <parameter name="url" value="https://www.amazon.in/"/>
+    <parameter name="username" value="singh.shiv452@gmail.com"/>
+    <classes>
+      <class name="Amazon.loginPageTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="SignInTest"/>
+          <include name="beforeTest"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="loginTest"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="verifyTitleTest"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- Amazon.loginPageTest -->
+    </classes>
+  </test> <!-- login Test 3(failed) -->
+  <test thread-count="2" parallel="tests" name="Login test 2(failed)">
+    <parameter name="password" value="9470522792"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="https://www.amazon.in/"/>
+    <parameter name="username" value="singh.shiv452@gmail.com"/>
+    <classes>
+      <class name="Amazon.loginPageTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- Amazon.loginPageTest -->
+    </classes>
+  </test> <!-- Login test 2(failed) -->
+  <test thread-count="2" parallel="tests" name="Login test 4(failed)">
+    <parameter name="password" value="9470522792"/>
+    <parameter name="browser" value="ie"/>
+    <parameter name="url" value="https://www.amazon.in/"/>
+    <parameter name="username" value="singh.shiv452@gmail.com"/>
+    <classes>
+      <class name="Amazon.loginPageTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="SignInTest"/>
+          <include name="beforeTest"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="loginTest"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="verifyTitleTest"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- Amazon.loginPageTest -->
+    </classes>
+  </test> <!-- Login test 4(failed) -->
+</suite> <!-- Failed suite [TestNG pactice Suite] -->
